@@ -15,7 +15,8 @@ const sess = {
     expires: 15 * 1000
   },
   resave: true,
-  saveUninitialized: true,
+  rolling: true,
+  saveUninitialized: false,
   store: new SequelizeStore({
     db: sequelize
   })
