@@ -2,16 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Blaugh</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 <body>
     <div class="wrapper">
 
         <header>
             <h1>
-                <a href="/">Tech Blaugh</a>
+                Tech Blaugh
+            </h1>
+            <h1>
+                <a href="/">Homepage</a>
             </h1>
             <nav>
                 {{#if loggedIn}}
@@ -24,12 +27,15 @@
         </header>
 
         <main>
-            {{ body }}
+            {{{ body }}}
         </main>
 
         <footer>
             Copyright the Wolt Didney Cumpanee 2022 do not steal
         </footer>
     </div> 
+    {{#if loggedIn}}
+    <script src="/JS/logout.js"></script>
+    {{/if}}
 </body>
 </html>

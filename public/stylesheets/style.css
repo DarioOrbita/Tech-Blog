@@ -1,0 +1,12 @@
+* {
+  background-color: rgb(41, 41, 41);
+  color: white;
+}
+
+a:link {
+  color: rgb(0, 187, 255);
+}
+
+a:visited {
+  color: aqua;
+}
